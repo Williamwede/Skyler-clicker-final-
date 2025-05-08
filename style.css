@@ -1,0 +1,40 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#cookie {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+#cookie:active {
+  transform: scale(0.95);
+}
+
+#multipliers {
+  margin-top: 20px;
+}
+
+#multipliers button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#multipliers button:hover {
+  background-color: #45a049;
+}
