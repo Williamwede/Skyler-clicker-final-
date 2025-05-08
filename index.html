@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skyler's Clicker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Skyler's Clicker</h1>
+  <div id="cookie-container">
+    <img id="cookie" src="https://i.postimg.cc/vZ7R0p4b/6040085879232319705.jpg" onclick="clickCookie()" />
+  </div>
+  <p>Cookies: <span id="cookie-count">0</span></p>
+
+  <div id="multipliers">
+    <h2>Multipliers</h2>
+    <button onclick="buyMultiplier(2, 500)">Buy ×2 (500 cookies)</button>
+    <button onclick="buyMultiplier(3, 1500)">Buy ×3 (1500 cookies)</button>
+    <button onclick="buyMultiplier(10, 10000)">Buy ×10 (10000 cookies)</button>
+  </div>
+
+  <div id="upgrades">
+    <h2>Upgrades</h2>
+
+    <div class="upgrade-block">
+      <button onclick="buyUpgrade('football')">Buy Football Skyler (1000)</button>
+      <div class="upgrade-icon">
+        <img id="football-img" class="upgrade-img" style="display:none" src="https://i.postimg.cc/Y2sFjWf7/1508168866211726920.jpg" />
+        <span id="football-count" class="upgrade-count"></span>
+      </div>
+      <button onclick="upgradeSkyler('football')">Upgrade Football Skyler Production (5000)</button>
+    </div>
+
+    <div class="upgrade-block">
+      <button onclick="buyUpgrade('baseball')">Buy Baseball Skyler (10000)</button>
+      <div class="upgrade-icon">
+        <img id="baseball-img" class="upgrade-img" style="display:none" src="https://i.postimg.cc/cLCKFFBP/123287381749023619.jpg" />
+        <span id="baseball-count" class="upgrade-count"></span>
+      </div>
+      <button onclick="upgradeSkyler('baseball')">Upgrade Baseball Skyler Production (25000)</button>
+    </div>
+
+    <div class="upgrade-block">
+      <button onclick="buyUpgrade('deer')">Buy Deer Hunting Skyler (1,000,000)</button>
+      <div class="upgrade-icon">
+        <img id="deer-img" class="upgrade-img" style="display:none" src="https://i.postimg.cc/BZyczbFB/IMG-3528.jpg" />
+        <span id="deer-count" class="upgrade-count"></span>
+      </div>
+      <button onclick="upgradeSkyler('deer')">Upgrade Deer Hunting Skyler Production (2,000,000)</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
