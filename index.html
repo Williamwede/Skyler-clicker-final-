@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyler’s Cookies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Skyler’s Cookies</h1>
+  <p id="cookie-count">0</p>
+
+  <img
+    id="cookie"
+    src="https://i.postimg.cc/vZ7R0p4b/6040085879232319705.jpg"
+    onclick="clickCookie()"
+    alt="Cookie"
+  />
+
+  <div id="multipliers">
+    <!-- These will now act as purchase buttons -->
+    <button onclick="buyMultiplier(2, 100)">Buy ×2 (100 cookies)</button>
+    <button onclick="buyMultiplier(3, 300)">Buy ×3 (300 cookies)</button>
+    <button onclick="buyMultiplier(4, 600)">Buy ×4 (600 cookies)</button>
+    <button onclick="buyMultiplier(5, 1000)">Buy ×5 (1000 cookies)</button>
+    <button onclick="buyMultiplier(10, 2500)">Buy ×10 (2500 cookies)</button>
+    <button onclick="buyMultiplier(50, 10000)">Buy ×50 (10000 cookies)</button>
+    <button onclick="buyMultiplier(100, 20000)">Buy ×100 (20000 cookies)</button>
+    <button onclick="buyMultiplier(1000, 100000)">Buy ×1000 (100000 cookies)</button>
+  </div>
+
+  <div id="upgrades">
+    <button onclick="buyUpgrade('football')">Buy Football Skyler (1000 cookies)</button>
+    <button onclick="buyUpgrade('baseball')">Buy Baseball Skyler (10000 cookies)</button>
+    <button onclick="buyUpgrade('deer')">Buy Deer Hunting Skyler (1M cookies)</button>
+  </div>
+
+  <div id="upgrade-icons">
+    <img id="football-img" class="upgrade-img" style="display:none" src="https://i.postimg.cc/Y2sFjWf7/1508168866211726920.jpg">
+    <img id="baseball-img" class="upgrade-img" style="display:none" src="https://i.postimg.cc/cLCKFFBP/123287381749023619.jpg">
+    <img id="deer-img" class="upgrade-img" style="display:none" src="https://i.postimg.cc/BZyczbFB/IMG-3528.jpg">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

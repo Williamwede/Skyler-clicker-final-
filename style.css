@@ -1,0 +1,68 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+#cookie-count {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#cookie {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 6px solid #ccc;
+  transition: transform 0.1s;
+}
+
+#cookie:active {
+  transform: scale(0.95);
+}
+
+#multipliers,
+#upgrades {
+  margin-top: 20px;
+}
+
+#multipliers button,
+#upgrades button {
+  margin: 6px;
+  padding: 10px 14px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#multipliers button:hover,
+#upgrades button:hover {
+  background-color: #45a049;
+}
+
+#upgrade-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.upgrade-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
