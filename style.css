@@ -1,0 +1,72 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#cookie {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+#cookie:active {
+  transform: scale(0.95);
+}
+
+#upgrades {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffbf00;
+}
+
+.skyler-img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#end-message {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 2em;
+  color: green;
+}
+
+.plane {
+  width: 50px;
+  height: 50px;
+  background: gray;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  animation: crash 2s ease-out forwards;
+}
+
+@keyframes crash {
+  0% { transform: translateY(-100px); opacity: 1; }
+  100% { transform: translateY(300px); opacity: 0; }
+}
